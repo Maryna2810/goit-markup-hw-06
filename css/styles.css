@@ -241,7 +241,8 @@ body {
 .main-section {
   background-color: #2e2f42;
   margin: 0 auto;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/hero/dark-bg-mob-min.jpg);
   padding-top: 72px;
   padding-bottom: 72px;
   max-width: 320px;
@@ -252,9 +253,34 @@ body {
   background-size: cover;
 }
 
-@media screen and (min-resolusion: 192dpi) and (max-width: 767px) {
+@media screen and (min-resolusion: 192pi) and (max-width: 767px) {
   .main-section {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg@2x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(./images/hero/dark-bg-mob@2x-min.jpg);
+  }
+}
+@media screen and (min-resolusion: 96dpi) and (min-width: 767px) {
+  .main-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(./images/hero/dark-bg-tab-min.jpg);
+  }
+}
+@media screen and (min-resolusion: 192dpi) and (min-width: 767px) {
+  .main-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(./images/hero/dark-bg-tab@2x-min.jpg);
+  }
+}
+@media screen and (min-resolusion: 96dpi) and (min-width: 1158px) {
+  .main-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(./images/hero/people-office1-min.jpg);
+  }
+}
+@media screen and (min-resolusion: 192dpi) and (min-width: 1158px) {
+  .main-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(./images/hero/people-office1@2x-min.jpg);
   }
 }
 .main-title {
@@ -431,7 +457,7 @@ body {
 
 .about-us {
   background-color: #f4f4fd;
-  width: 320px;
+
   height: 2232px;
   padding: 96px 0;
 }
@@ -516,7 +542,7 @@ body {
   .about-us {
     display: flex;
     background-color: #f4f4fd;
-    width: 768px;
+
     height: 1224px;
     padding: 96px 0;
   }
@@ -760,7 +786,6 @@ body {
   display: flex;
   gap: 16px;
   justify-content: center;
-  padding-bottom: 72px;
 }
 
 .subscribe-container {
@@ -1119,6 +1144,7 @@ body {
   visibility: hidden;
   pointer-events: none;
 }
+
 .mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
@@ -1137,6 +1163,9 @@ body {
   position: absolute;
   top: 24px;
   right: 24px;
+  border-radius: 100%;
+
+  border: none;
 }
 .mobile-menu-nav {
   margin-bottom: auto;
